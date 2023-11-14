@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: hm-gateway
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 43.143.114.98:8848
+      config:
+        file-extension: yaml
+        shared-configs:
+          - dataId: shared-jdbc.yaml
+          - dataId: shared-log.yaml
+#          - dataId: shared-swagger.yaml
