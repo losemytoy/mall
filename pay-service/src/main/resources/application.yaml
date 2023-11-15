@@ -13,6 +13,12 @@ spring:
   cloud:
     nacos:
       server-addr: 43.143.114.98:8848
+  rabbitmq:
+    host: 43.143.114.98
+    port: 5672
+    virtual-host: /
+    username: user
+    password: 123456
 feign:
   okhttp:
     enabled: true
